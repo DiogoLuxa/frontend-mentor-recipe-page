@@ -87,7 +87,7 @@ p {
 .container-flex-lists .list-item-ol .list-type {
   font-size: 1.6rem;
   font-weight: 700;
-  color: hsl(332, 51%, 32%);
+  color: hsl(14, 45%, 36%);
 }
 
 .container-flex {
@@ -135,6 +135,8 @@ main {
 main .title h1 {
   font-size: 3.6rem;
   font-family: "Young Serif", serif;
+  font-weight: 500;
+  line-height: 100%;
   color: hsl(24, 5%, 18%);
 }
 main .preparation {
@@ -143,7 +145,7 @@ main .preparation {
   row-gap: 1.6rem;
   padding: 2.4rem;
 }
-main .preparation h4 {
+main .preparation .preparation__title {
   font-size: 2rem;
   font-weight: 600;
   color: hsl(332, 51%, 32%);
@@ -177,5 +179,8 @@ main .nutrition__table__item p:nth-last-child(1) {
     flex-direction: column;
     row-gap: 3.2rem;
     padding: 4rem;
+  }
+  main .title h1 {
+    font-size: 4rem;
   }
 }/*# sourceMappingURL=style.css.map */
