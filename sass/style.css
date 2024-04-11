@@ -213,8 +213,14 @@ main .nutrition__table__item p:nth-last-child(1) {
 }
 
 .attribution {
+  display: none;
   position: absolute;
   bottom: 2rem;
+}
+@media (min-width: 1440px) {
+  .attribution {
+    display: block;
+  }
 }
 
 @media (min-width: 736px) {
