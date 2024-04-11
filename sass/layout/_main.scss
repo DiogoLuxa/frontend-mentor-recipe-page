@@ -1,0 +1,84 @@
+main {
+  display: flex;
+  flex-direction: column;
+  row-gap: 3.2rem;
+  padding: 4rem 3.2rem;
+  .title {
+    h1 {
+      font-size: $heading-l-mobile;
+      font-family: $heading;
+      font-weight: 500;
+      line-height: 100%;
+      color: $dark-charcoal;
+    }
+  }
+  .preparation {
+    display: flex;
+    flex-direction: column;
+    row-gap: 13px;
+    padding: 15px 24px 20px 24px;
+    .preparation__title {
+      font-size: $heading-s;
+      font-weight: 600;
+      color: $dark-raspberry;
+    }
+  }
+  .ingredients {
+    margin-top: -5px;
+    .container-flex-lists {
+      margin-top: -3px;
+    }
+    @media (min-width: 1440px) {
+      margin-top: 3px;
+    }
+  }
+  .instructions {
+    margin-top: -5px;
+    .container-flex-lists {
+      margin-top: -7px;
+    }
+  }
+  .nutrition {
+    margin-top: -5px;
+    &.container-flex {
+      row-gap: 2rem;
+    }
+    &__table {
+      display: flex;
+      flex-direction: column;
+      row-gap: 1.2rem;
+      &__item {
+        display: flex;
+        column-gap: 1.6rem;
+        padding: 0 3.2rem;
+      }
+      &__item p {
+        display: inline-block;
+      }
+      &__item p:nth-child(1) {
+        width: 45%;
+        @media (min-width: 1440px) {
+          width: 50%;
+        }
+      }
+      &__item p:nth-last-child(1) {
+        width: 45%;
+        color: $brandy-red;
+        font-weight: 700;
+      }
+    }
+  }
+}
+@media (min-width: 736px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    row-gap: 3.2rem;
+    padding: 4rem;
+    .title {
+      h1 {
+        font-size: $heading-l-desktop;
+      }
+    }
+  }
+}

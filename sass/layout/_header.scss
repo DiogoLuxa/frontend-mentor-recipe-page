@@ -1,0 +1,17 @@
+header {
+  img {
+    width: 100%;
+  }
+}
+@media (min-width: 736px) {
+  header {
+    img {
+      width: 100%;
+      width: -moz-available; /* WebKit-based browsers will ignore this. */
+      width: -webkit-fill-available; /* Mozilla-based browsers will ignore this. */
+      width: fill-available;
+      margin: 4rem 4rem 0 4rem;
+      border-radius: 1.2rem;
+    }
+  }
+}

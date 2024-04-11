@@ -1,0 +1,20 @@
+@import "colors";
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap");
+
+// sizes
+$heading-l-mobile: 3.6rem;
+$heading-l-desktop: 4rem;
+$heading-m: 2.8rem;
+$heading-s: 2rem;
+$paragraph: 1.6rem;
+
+// font-family
+$heading: "Young Serif", serif;
+$body: "Outfit", sans-serif;
+
+.subtitle {
+  font-family: $heading;
+  font-size: $heading-m;
+  font-weight: 500;
+  color: $brandy-red;
+}

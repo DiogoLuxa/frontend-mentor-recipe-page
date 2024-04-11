@@ -70,18 +70,28 @@ p {
 .container-flex-lists .list-item-ul {
   display: flex;
   align-items: center;
-  -moz-column-gap: 2.6rem;
-       column-gap: 2.6rem;
-  margin-left: 0.8rem;
+  -moz-column-gap: 3rem;
+       column-gap: 3rem;
+  margin-left: 8px;
+  position: relative;
 }
 .container-flex-lists .list-item-ul .list-type {
-  font-size: 2rem;
-  color: hsl(332, 51%, 32%);
+  position: relative;
+}
+.container-flex-lists .list-item-ul .list-type::before {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  content: "";
+  width: 4px;
+  height: 4px;
+  background-color: hsl(332, 51%, 32%);
+  border-radius: 50%;
 }
 .container-flex-lists .list-item-ol {
   display: flex;
-  -moz-column-gap: 2.6rem;
-       column-gap: 2.6rem;
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
   margin-left: 0.8rem;
 }
 .container-flex-lists .list-item-ol .list-type {
@@ -142,13 +152,36 @@ main .title h1 {
 main .preparation {
   display: flex;
   flex-direction: column;
-  row-gap: 1.6rem;
-  padding: 2.4rem;
+  row-gap: 13px;
+  padding: 15px 24px 20px 24px;
 }
 main .preparation .preparation__title {
   font-size: 2rem;
   font-weight: 600;
   color: hsl(332, 51%, 32%);
+}
+main .ingredients {
+  margin-top: -5px;
+}
+main .ingredients .container-flex-lists {
+  margin-top: -3px;
+}
+@media (min-width: 1440px) {
+  main .ingredients {
+    margin-top: 3px;
+  }
+}
+main .instructions {
+  margin-top: -5px;
+}
+main .instructions .container-flex-lists {
+  margin-top: -7px;
+}
+main .nutrition {
+  margin-top: -5px;
+}
+main .nutrition.container-flex {
+  row-gap: 2rem;
 }
 main .nutrition__table {
   display: flex;
@@ -166,6 +199,11 @@ main .nutrition__table__item p {
 }
 main .nutrition__table__item p:nth-child(1) {
   width: 45%;
+}
+@media (min-width: 1440px) {
+  main .nutrition__table__item p:nth-child(1) {
+    width: 50%;
+  }
 }
 main .nutrition__table__item p:nth-last-child(1) {
   width: 45%;

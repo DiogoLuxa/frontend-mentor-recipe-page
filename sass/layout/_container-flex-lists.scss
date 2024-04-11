@@ -1,0 +1,36 @@
+.container-flex-lists {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.8rem;
+
+  .list-item-ul {
+    display: flex;
+    align-items: center;
+    column-gap: 3rem;
+    margin-left: 8px;
+    position: relative;
+    .list-type {
+      position: relative;
+    }
+    .list-type::before {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      content: "";
+      width: 4px;
+      height: 4px;
+      background-color: $dark-raspberry;
+      border-radius: 50%;
+    }
+  }
+  .list-item-ol {
+    display: flex;
+    column-gap: 2rem;
+    margin-left: 0.8rem;
+    .list-type {
+      font-size: $paragraph;
+      font-weight: 700;
+      color: $brandy-red;
+    }
+  }
+}

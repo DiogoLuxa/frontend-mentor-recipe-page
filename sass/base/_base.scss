@@ -1,0 +1,44 @@
+/*
+## Layout
+- Mobile: 375px
+- Desktop: 1440px
+*/
+@import "typography";
+@import "colors";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: $paragraph;
+  font-family: $body;
+  color: $wenge-brown;
+  background-color: $eggshell;
+}
+ul,
+ol {
+  list-style-position: inside;
+  list-style-type: none;
+}
+li {
+  position: relative;
+}
+a {
+  color: $dark-raspberry;
+}
+p {
+  line-height: 150%;
+}
+
+@media (min-width: 768px) {
+  body {
+    padding: 123px;
+  }
+}
