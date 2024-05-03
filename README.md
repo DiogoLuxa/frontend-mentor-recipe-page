@@ -5,7 +5,6 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 ## Table of contents
 
 - [Frontend Mentor - Recipe page solution](#frontend-mentor---recipe-page-solution)
-  - [Table of contents](#table-of-contents)
   - [Overview](#overview)
     - [Screenshot](#screenshot)
     - [Links](#links)
