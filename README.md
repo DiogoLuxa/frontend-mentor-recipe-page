@@ -23,7 +23,7 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 
 ### Links
 
-- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/challenges/recipe-page-KiTsR8QQKm/hub)
+- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/responsive-landing-page-using-css-flexbox-6QS5PUv_a0)
 - Live Site URL: [Recipe Page](https://diogoluxa.github.io/frontend-mentor-recipe-page/)
 
 ## My process
